@@ -5,33 +5,22 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <script type="module" src="./main.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <!-- <a class="nav-logo" href="./index.html" aria-label="Site logo">
-            <svg class="nav-logo-icon" width="100" height="30">
-              <use href="./img/logo.svg"></use>
-            </svg>
-          </a> -->
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-act}" href="./1-timer.html"
-                >Timer</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link {=$highlight-curr}" href="./2-snackbar.html"
-                >Snackbar</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main></main>
+    <main>
+      <form class="form-send-js">
+        <input
+          class="input-form"
+          type="text"
+          name="search"
+          placeholder="Search for images..."
+          required
+        />
+        <button class="btn-form" type="submit">Search</button>
+      </form>
+      <ul class="list-js"></ul>
+    </main>
   </body>
 </html>
